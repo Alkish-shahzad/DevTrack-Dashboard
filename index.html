@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevTrack | Developer Workspace</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+
+            <a href="#dashboard" class="brand">
+                <span class="brand-icon">D</span>
+                <span>DevTrack</span>
+            </a>
+
+            <p class="menu-label">WORKSPACE</p>
+
+            <nav class="side-nav">
+                <a href="#dashboard" class="nav-link active">
+                    Dashboard
+                </a>
+
+                <a href="#projects" class="nav-link">
+                    My Projects
+                </a>
+
+                <a href="#tasks" class="nav-link">
+                    My Tasks
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="profile-avatar">DS</div>
+
+                <div>
+                    <strong>Developer Student</strong>
+                    <small>Software Engineering</small>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" id="dashboard">
+
+            <!-- Top Bar -->
+            <header class="topbar">
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Toggle navigation"
+                >
+                    Menu
+                </button>
+
+                <span class="breadcrumb">
+                    Workspace / Dashboard
+                </span>
+
+                <span class="status-label">
+                    <span></span>
+                    Personal workspace
+                </span>
+
+            </header>
+
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+
+                <p class="eyebrow">
+                    YOUR DEVELOPER WORKSPACE
+                </p>
+
+                <h1>
+                    Build something <span>meaningful.</span>
+                </h1>
+
+                <p class="welcome-description">
+                    Keep your projects organized, track your progress,
+                    and make every coding session count.
+                </p>
+
+            </section>
+
+            <!-- Dashboard Statistics -->
+            <section
+                class="stats-grid"
+                aria-label="Project statistics"
+            >
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Total Projects</span>
+                    </div>
+
+                    <h2 id="totalProjects">03</h2>
+
+                    <p>Your development portfolio</p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Active Tasks</span>
+                    </div>
+
+                    <h2 id="activeTasks">05</h2>
+
+                    <p>Work in progress</p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Completed</span>
+                    </div>
+
+                    <h2 id="completedTasks">12</h2>
+
+                    <p>Tasks finished so far</p>
+
+                </article>
+
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects-section" id="projects">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">
+                            KEEP MOVING FORWARD
+                        </p>
+
+                        <h2>Your projects</h2>
+                    </div>
+
+                    <button
+                        class="primary-button"
+                        id="addProjectBtn"
+                    >
+                        New Project
+                    </button>
+
+                </div>
+
+                <div class="project-grid" id="projectGrid">
+
+                    <!-- Project One -->
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+                            <span class="project-symbol symbol-blue">
+                                P
+                            </span>
+
+                            <span class="project-status">
+                                In progress
+                            </span>
+                        </div>
+
+                        <h3>Personal Portfolio</h3>
+
+                        <p>
+                            A responsive website to showcase my skills
+                            and work.
+                        </p>
+
+                        <div class="progress-info">
+                            <span>Progress</span>
+                            <strong>65%</strong>
+                        </div>
+
+                        <div class="progress-track">
+                            <div
+                                class="progress-fill"
+                                style="width: 65%"
+                            ></div>
+                        </div>
+
+                        <div class="project-footer">
+                            <span>HTML · CSS · JavaScript</span>
+                            <span>01</span>
+                        </div>
+
+                    </article>
+
+                    <!-- Project Two -->
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+                            <span class="project-symbol symbol-purple">
+                                T
+                            </span>
+
+                            <span class="project-status status-review">
+                                In progress
+                            </span>
+                        </div>
+
+                        <h3>Task Manager UI</h3>
+
+                        <p>
+                            A clean interface for organizing everyday
+                            development work.
+                        </p>
+
+                        <div class="progress-info">
+                            <span>Progress</span>
+                            <strong>40%</strong>
+                        </div>
+
+                        <div class="progress-track">
+                            <div
+                                class="progress-fill purple-fill"
+                                style="width: 40%"
+                            ></div>
+                        </div>
+
+                        <div class="project-footer">
+                            <span>Bootstrap · JavaScript</span>
+                            <span>02</span>
+                        </div>
+
+                    </article>
+
+                    <!-- Project Three -->
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+                            <span class="project-symbol symbol-green">
+                                C
+                            </span>
+
+                            <span class="project-status status-complete">
+                                Completed
+                            </span>
+                        </div>
+
+                        <h3>Calculator App</h3>
+
+                        <p>
+                            A utility application designed with a focus
+                            on usability.
+                        </p>
+
+                        <div class="progress-info">
+                            <span>Progress</span>
+                            <strong>100%</strong>
+                        </div>
+
+                        <div class="progress-track">
+                            <div
+                                class="progress-fill green-fill"
+                                style="width: 100%"
+                            ></div>
+                        </div>
+
+                        <div class="project-footer">
+                            <span>HTML · CSS · JavaScript</span>
+                            <span>03</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Tasks Section -->
+            <section class="tasks-section" id="tasks">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">
+                            PLAN YOUR NEXT MOVE
+                        </p>
+
+                        <h2>Today's focus</h2>
+                    </div>
+
+                </div>
+
+                <div class="task-list">
+
+                    <label class="task-item">
+                        <input type="checkbox">
+
+                        <span>Review portfolio layout</span>
+
+                        <span class="priority high">
+                            High
+                        </span>
+                    </label>
+
+                    <label class="task-item">
+                        <input type="checkbox">
+
+                        <span>
+                            Practice JavaScript fundamentals
+                        </span>
+
+                        <span class="priority medium">
+                            Medium
+                        </span>
+                    </label>
+
+                    <label class="task-item">
+                        <input type="checkbox">
+
+                        <span>
+                            Update project documentation
+                        </span>
+
+                        <span class="priority low">
+                            Low
+                        </span>
+                    </label>
+
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+
+                <span>DevTrack © 2026</span>
+
+                <span>
+                    Designed for focused development.
+                </span>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
